@@ -1,4 +1,4 @@
-# Projet Réseau - Client BitTorrent Minimal (fichier en une seule partie pour le moment)
+# Projet Réseau - Client BitTorrent Minimal 
 
 Ce dépôt contient l'implémentation d'un client BitTorrent simplifié développé en Python. Il est capable de lire un fichier `.torrent`, de contacter un tracker HTTP, d'effectuer le handshake avec un pair et de télécharger un fichier d'une seule pièce. 
 
@@ -40,7 +40,7 @@ Vérifiez que le torrent fraîchement créé apparaît bien "En émission" (Seed
 Lancez ensuite le client depuis un terminal :
 
 ```bash
-python projet.py
+python projet.py exemple.torrent
 ```
 
 Le déroulement attendu affiché dans la console couvre les étapes suivantes :
