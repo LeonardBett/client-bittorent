@@ -59,10 +59,10 @@ if __name__ == "__main__":
     print("Toutes les pieces sont téléchargés et validées, ecriture du fichier")
 
     # On ecrit les données telechargé dans un fichier
-    fichier = open("projet_"+nomFichier , "wb")
+    fichier=open("projet_"+nomFichier,"wb")
     fichier.write(donnéeTorrent)
     fichier.close()
-    print("-> Opération terminée avec succès.")
+    print("Télechargement terminé avec succes")
 
 
     
