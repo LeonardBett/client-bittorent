@@ -1,6 +1,8 @@
+Projet universitaire de client BitTorrent unilatéral, dans le but de décourvrir et comprendre le fonctionnement du PeerToPeer
+
 # Projet Réseau - Client BitTorrent Minimal 
 
-Ce dépôt contient l'implémentation d'un client BitTorrent simplifié développé en Python. Il est capable de lire un fichier `.torrent`, de contacter un tracker HTTP, d'effectuer le handshake avec un pair et de télécharger un fichier d'une seule pièce. 
+Ce dépôt contient l'implémentation d'un client BitTorrent simplifié développé en Python. Il est capable de lire un fichier `.torrent`, de contacter un tracker HTTP qbTorrent, d'effectuer le handshake avec un pair et de télécharger un fichier. 
 
 Le code n'utilise aucune bibliothèque externe pour le réseau ou l'encodage Bencode (uniquement `socket`, `hashlib`, `struct`, etc.).
 
@@ -8,7 +10,7 @@ Le code n'utilise aucune bibliothèque externe pour le réseau ou l'encodage Ben
 
 Le projet est conçu pour être testé en boucle locale (localhost). qBittorrent est utilisé à la fois comme tracker et comme seeder. 
 
-**Paramètres stricts à appliquer dans qBittorrent :**
+**Paramètres à appliquer dans qBittorrent :**
 
 1. **Tracker intégré :**
    * Allez dans *Outils > Options > Avancé*.
@@ -20,11 +22,9 @@ Le projet est conçu pour être testé en boucle locale (localhost). qBittorrent
    * Allez dans *Outils > Options > BitTorrent*.
    * Réglez le *Mode de chiffrement* sur **Préférer le texte clair** ou **Désactivé**.
 
-*Note : Il est conseillé de redémarrer qBittorrent après avoir appliqué ces modifications.*
-
 ## 2. Création du fichier .torrent
 
-Le dépôt contient un fichier source de test : `data.txt`. Vous devez générer le fichier `.torrent` associé pour lancer l'exécution :
+Le dépôt contient un fichier source de test : `data.txt`. Vous pouvez générer le fichier `.torrent` associé pour lancer l'exécution :
 
 1. Dans qBittorrent, ouvrez **Outils > Créateur de torrent**.
 2. **Source :** Cliquez sur *Sélectionner le fichier* et choisissez `data.txt`.
@@ -35,7 +35,7 @@ Le dépôt contient un fichier source de test : `data.txt`. Vous devez générer
 
 ## 3. Exécution
 
-Vérifiez que le torrent fraîchement créé apparaît bien "En émission" (Seeding) dans qBittorrent.
+Vérifiez que le torrent créé apparaît bien "En émission" (Seeding) dans qBittorrent.
 
 Lancez ensuite le client depuis un terminal :
 
