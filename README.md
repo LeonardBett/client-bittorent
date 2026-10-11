@@ -1,4 +1,4 @@
-Projet universitaire de client BitTorrent unilatéral, dans le but de décourvrir et comprendre le fonctionnement du PeerToPeer
+Projet universitaire de client BitTorrent unilatéral, dans le but de découvrir et comprendre le fonctionnement du P2P
 
 # Projet Réseau - Client BitTorrent Minimal 
 
